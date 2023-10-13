@@ -16,4 +16,4 @@ app.all("*", async (request, response) => {
 	response.send(funny)
 })
 
-render.init().then(() => app.listen(process.env.PORT))
+render.init().then(() => app.listen(process.env.PORT || 80))
