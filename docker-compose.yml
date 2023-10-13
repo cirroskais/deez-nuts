@@ -1,0 +1,12 @@
+services:
+    deez-nuts:
+        container_name: deez-nuts
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        networks:
+            - nginx
+
+networks:
+    nginx:
+        external: true
